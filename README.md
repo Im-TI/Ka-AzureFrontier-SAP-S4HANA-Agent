@@ -109,20 +109,16 @@ O **Ka-SAP Copiloto** é um agente inteligente que atua como suporte técnico pa
 - [Power Automate](https://learn.microsoft.com/en-us/power-automate/)  
 - [Azure Cognitive Search](https://learn.microsoft.com/en-us/azure/search/)  
 
----
 
-## 🎥 Vídeo (opcional)
 
-📹 [Link para o vídeo explicativo](https://...)
 
----
-
-## 🧍‍♀️ Avatar (opcional)
+## 🧍‍♀️ Avatar 
 
 - Personagem “PROJETOS SAP + AI Support” com óculos, earbuds e camisa laranja.
 - ![Print 12 – Avatar Kassia](./prints/12-avatar-kassia.png)
 
 ---
+<img width="768" height="1344" alt="Avatar Projeto SAP - Ka" src="https://github.com/user-attachments/assets/47870874-9a3f-4860-b6e8-8472fd7334a7" />
 
 ## ✅ Status Final
 
