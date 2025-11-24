@@ -1,7 +1,7 @@
 🚀 Ka-SAP Copilot Agent
 Agente de IA criado para o Build Your First Copilot Challenge (Foundry Edition), projetado para responder dúvidas técnicas sobre migração do SAP ECC para o S/4HANA utilizando Azure AI Foundry.
 
-Autora: Kassia — Especialista em Projetos SAP ⚡
+Autora: Kassia Regina Camargo Costacurta — Especialista em Projetos SAP ⚡
 
 🧠 Sobre o agente
 O Ka-SAP Copilot é um agente inteligente que atua como suporte técnico em projetos SAP, especialmente voltado para migração de SAP ECC para S/4HANA.
@@ -28,12 +28,17 @@ PowerShell + REST API
 GitHub
 
 📁 Estrutura do Projeto
-Componente	Descrição
-sap-s4hana	Índice de busca com os documentos técnicos
-saps4hanna-indexador	Indexador que processa os arquivos do Blob
-saps4hanna-processed-source	Fonte de dados conectada ao contêiner
-fileNameSuggester	Autocomplete com nomes de arquivos
+
+<img width="550" height="162" alt="image" src="https://github.com/user-attachments/assets/4b03b49e-01a2-441d-b259-503af3e86f10" />
+
+      Componente	                  Descrição
+sap-s4hana      	            Índice de busca com os documentos técnicos
+saps4hanna-indexador	        Indexador que processa os arquivos do Blob
+saps4hanna-processed-source  	Fonte de dados conectada ao contêiner
+fileNameSuggester  	          Autocomplete com nomes de arquivos
+
 📸 Passo a Passo com Prints
+
 Criação da Conta de Armazenamento Tipo: LRS (Localmente Redundante) — menor custo e atende ao projeto.
 
 Criação do Serviço de Pesquisa Configurado com boas práticas de governança.
@@ -47,10 +52,12 @@ Indexador Nome: saps4hanna-indexador Extensões: .pdf, .docx, .html Resultado: 9
 Teste via PowerShell
 
 powershell
+
 Invoke-RestMethod `
   -Method Get `
   -Uri "https://agente-ka-sap-s4hana.search.windows.net/indexes/sap-s4hana/docs?search=*&$count=true&api-version=2023-07-01-Preview" `
   -Headers @{ "api-key" = "SUA_API_KEY" }
+
 Resultado: @odata.count = 9
 
 Consulta específica: “Cash” Retorna documento de Cash Management.
